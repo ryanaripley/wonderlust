@@ -1,0 +1,35 @@
+@mixin font-display {
+	font-family: "proxima-nova",sans-serif;
+}
+
+@mixin font-paragraph {
+	font-family: "adobe-caslon-pro",serif;
+}
+
+body {
+	@include font-paragraph;
+}
+
+h1, h2, h3, h4, h5, h6, .display {
+	font-family: "proxima-nova",sans-serif;
+}
+
+h2 {
+	font-family: "proxima-nova",sans-serif;
+	font-size: 2.2em;
+	line-height: 1;
+	margin-top: 1.5em;
+	margin-bottom: .1em;
+	padding-top: 0;
+}
+
+h3 {
+	margin-bottom: .2em;
+}
+
+p {
+	color: #3d3d3d;
+	font-family: "adobe-caslon-pro",serif;
+	font-size: 1.3em;
+}
+

@@ -1,0 +1,40 @@
+body.with-overlay {
+	overflow: hidden;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.3);
+  z-index: 9999999;
+}
+
+.modal {
+  background: white;
+  max-width: 30em;
+  width: 94%;
+  margin: 0 auto;
+  padding: .5em 1.5em;
+  position: relative;
+  top: 50%;
+  @include translate(0, -50%);
+  h2 {
+  	color: $color-maindark;
+  	margin-top: .5em;
+  }
+}
+
+.modal a, .modal a:visited {
+	color: $color-maindark;
+	&:hover, &:target {
+		text-decoration: underline;
+	}
+	&:active {
+		text-decoration: none;
+	}
+}
+
+
+

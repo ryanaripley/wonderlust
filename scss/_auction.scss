@@ -1,0 +1,20 @@
+.auction {
+	clear: both;
+	margin-bottom: 2em;
+	@include group;
+	@include set-width;
+	h2 {
+		margin-top: 1.3em;
+		margin-bottom: .6em;
+	}
+}
+
+.auction a, .auction a:visited {
+	color: $color-maindark;
+	&:hover, &:target {
+		text-decoration: underline;
+	}
+	&:active {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,73 @@
+.title {
+	padding-top: 9em;
+	text-align: center;
+	@include bp(medium) {
+		background: url(../img/wonderlust-header-m.jpg) repeat-x center top; 
+		padding-top: 12em;
+	}
+	@include bp(large) {
+		background: url(../img/wonderlust-header.jpg) repeat-x center top; 
+		padding-top: 16em;
+	}
+	@include bp(xlarge) {
+		background: url(../img/wonderlust-header.jpg) repeat-x center top; 
+		padding-top: 14em;
+	}
+}
+
+.page-title {
+	color: $color-main;
+	text-transform: uppercase;
+	font-size: 4em;
+	margin: 0;
+	text-shadow: 0px 0px 12px rgba(0, 0, 0, .7);
+	@media(max-width: 500px) {
+		font-size: 3em;
+	}
+	@include bp(large) {
+		font-size: 5em;
+	}
+	@include bp(xlarge) {
+		font-size: 7em;
+	}
+	.lust {
+		color: white;
+	}
+}
+
+.logo-wrap {
+}
+
+.header-background {
+	width: 100%;
+}
+
+.wonderlust-logo {
+	width: 70%;
+	max-width: 843px;
+	@include bp(small) {
+		width: 82%;
+	}
+}
+
+.sub-title {
+	color: black;
+	font-family: 'proxima-nova', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	margin-top: .5em;
+	margin-bottom: 0;
+	@include bp(medium) {
+		font-size: 1.6em;
+	}
+	@include bp(large) {
+		font-size: 1.6em;
+	}
+	@include bp(xlarge) {
+		font-size: 1.8em;
+	}
+	span {
+		color: $color-maindark;
+	}
+}
+

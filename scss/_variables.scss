@@ -1,0 +1,66 @@
+$color-main: #adc737;
+$color-maindark: #95aa36;
+$color-dark: #231F20;
+
+$padding: 3rem;
+
+@mixin antialias {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.group:before,
+.group:after,
+[class*="content"]:before,
+[class*="content"]:after,
+[class*="site"]:before,
+[class*="site"]:after {
+	content: '';
+	display: table;
+}
+
+.group:after,
+[class*="content"]:after,
+[class*="site"]:after {
+	clear: both;
+}
+
+@mixin group {
+	&:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+	}
+}
+
+@mixin set-width {
+	max-width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $padding;
+	padding-right: $padding;
+	@include bp(small) {
+		padding-left: $padding/2;
+		padding-right: $padding/2;
+	}
+}
+
+.divider-both {
+	background: url(../img/divider-both.png) no-repeat center center; 
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+  	background-size: 100%;
+  	height: 5em;
+	@include group;
+}
+
+.divider-both-flip {
+	background: url(../img/divider-both-flip.png) no-repeat center center; 
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+  	background-size: 100%;
+  	height: 5em;
+	@include group;
+}

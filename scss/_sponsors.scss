@@ -1,0 +1,62 @@
+.sponsors {
+	margin-bottom: 2em;
+	text-align: center;
+	@include group;
+}
+
+.sponsors-stripe {
+	background: $color-main;
+	display: block;
+	height: 2em;
+	margin-bottom: 2em;
+	@include box-shadow(rgba(black, .4) 0px 15px 30px);
+}
+
+.sponsors-wrapper {
+	@include set-width;
+}
+
+img.sponsors-img {
+	max-width: 70%;
+	clear: both;
+	@include bp(small) {
+		max-width: 80%;
+	}
+}
+
+.sponsors {
+	h3 {
+		font-size: 1.5em;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.sponsor-list {
+	margin-top: 1.2em;
+	ul {
+		list-style-type: none;
+		margin-top: 0;
+		margin-bottom: 1em;
+		padding-left: 0;
+	}
+	li {
+		font-size: 1.3em;
+		padding-bottom:.4em;
+	}
+}
+
+.committee-list {
+	font-size: 1.1em;
+	margin-top: .4em;
+	@include column-count(2);
+	ul {
+		list-style-type: none;
+		margin-top: 0;
+		margin-bottom: 1em;
+		padding-left: 0;
+	}
+	li {
+		font-size: 1.1em;
+	}
+}

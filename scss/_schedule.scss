@@ -1,0 +1,39 @@
+.schedule {
+	background-color: $color-dark;
+  	color: white;
+  	margin-top: 1em;
+	padding-top: .5em;
+	position: relative;
+	@include group;
+} 
+
+.schedule-wrapper {
+	@include set-width;
+}
+
+.schedule h2, .schedule time, .schedule li {
+	color: white;
+	@include antialias;
+}
+
+.schedule h2 {
+	color: $color-main;
+	margin-top: .5em;
+}
+
+.schedule ul {
+	list-style-type: none;
+	padding: 0 0 2em;
+	li {
+		font-size: 1.6em;
+		margin-left: 5em;
+		position: relative;
+		font-weight: 700;
+		time {
+			left: -5em;
+			position: absolute;
+			font-weight: 400;
+		}
+	}
+
+}

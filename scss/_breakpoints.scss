@@ -1,0 +1,32 @@
+/* =Break Points
+----------------------------------------------- */
+
+@mixin bp($point) {
+  @if $point == xlarge {
+  	@media (min-width: 1601px) { @content; }
+  }
+  @if $point == large {
+    @media (max-width: 1600px) and (min-width: 1001px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 1000px) and (min-width: 601px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 600px)  { @content; }
+  }
+}
+
+body {
+	@include bp(small) {
+		font-size: .8rem;
+	}
+	@include bp(medium) {
+		font-size: 1rem;
+	}
+	@include bp(large) {
+		font-size: 1.2rem;
+	}
+  @include bp(xlarge) {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,7 @@
+.what {
+	padding-bottom: 2rem;
+	@include set-width;
+	h2 {
+		margin-top: .8em;
+	}
+}

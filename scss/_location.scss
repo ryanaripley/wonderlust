@@ -1,0 +1,65 @@
+.location {
+	background: black;
+	position: relative;
+	clear: both;
+	@include bp(medium) {
+		background: url(../img/aria-bg-m.jpg) no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	  	background-size: cover;
+	}
+	@include bp(large) {
+		background: url(../img/aria-bg.jpg) no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	  	background-size: cover;
+	}
+	@include bp(xlarge) {
+		background: url(../img/aria-bg.jpg) no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	  	background-size: cover;
+	}
+	@include box-shadow(rgba(black, .4) 0px 15px 30px);
+}
+
+.location-wrapper {
+	margin-top: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	@include set-width;
+	@include group;
+
+}
+
+.location-wrapper {
+	h2, p {
+		color: white;
+		text-shadow: 2px 2px 6px rgba(0, 0, 0, .7);
+	}
+	h2 {
+		margin-top: .5em;
+	}
+	a, a:visited {
+		color: $color-main;
+		text-decoration: none;
+	}
+	a:hover, a:target {
+		text-decoration: underline;
+	}
+}
+
+.location-wrapper img {
+	float: right;
+	margin: 1em 0 1em 2em;
+	max-width: 16em;
+	@include box-shadow(rgba(black, .4) 0px 15px 30px);
+	@include bp(small) {
+		float: none;
+		margin: 1em 0;
+		max-width: 100%;
+	}
+}
