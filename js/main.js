@@ -2,7 +2,7 @@ $(function(){
   
   var smallBP = 730; // should match the small breakpoint in CSS
   var $menu = $( '.main-nav' );
-  
+
   $menu.children('a').click(function(event) {
     var width = $(window).width();
     if (width < smallBP) {

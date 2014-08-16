@@ -31,9 +31,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/global.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript" src="//use.typekit.net/sxg3rcw.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -56,7 +55,7 @@
                             <li><a id="topBtn" href="topBtn">Home</a></li>
                             <li><a id="locationBtn" href="#location">Venue</a></li>
                             <li><a id="detailsBtn" href="#details">Details</a></li>
-                            <li><a id="auctionBtn" class="auction" href="auction">Auction</a></li>
+                            <li><a id="auctionBtn" href="auction">Auction</a></li>
                             <li><a href="https://secure.pwcenter.org/np/clients/pwcenter/eventRegistration.jsp?event=1156&">Buy Tickets</a></li>
                         </ul>
                     </nav>
@@ -347,12 +346,7 @@
         </div><!-- .wrapper -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script type="text/javascript" src="js/scrolld.min.js"></script>
-        <script type="text/javascript" src="js/jquery.resmenu.min.js"></script>
-
+        <script src="js/build/global.min.js"></script>
 
         <script type="text/javascript">
         $("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();})
